@@ -11,6 +11,10 @@ body {
     background-color: rgb(59, 1, 78);
 }
 
+p {
+    font-size: 14px;
+}
+
 hr {
     color: black;
 }
@@ -22,8 +26,9 @@ img {
     align-content: center;
 }
 
-scrolling-images {
-
+.container {
+    scroll-snap-type: x mandatory; /* horizontal snapping */
+  scroll-snap-align: start; /* snap to the left */
 }
 
 h1 {
