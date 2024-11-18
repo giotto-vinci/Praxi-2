@@ -1,59 +1,117 @@
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
-    background-color: rgb(59, 1, 78);
+  background-color: rgb(59, 1, 78);
 }
 
 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 hr {
-    color: black;
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  border-color: 1rem solid black;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
+  display: block;
+  margin: auto;
+  align-content: center;
 }
 
-.container {
-    scroll-snap-type: x mandatory; /* horizontal snapping */
-  scroll-snap-align: start; /* snap to the left */
+figcaption {
+  font-family: cursive;
+  font-size: 16px;
+}
+
+article {
+  flex-direction: row;
+  overflow: auto;
+  grid: auto rows;
 }
 
 h1 {
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }
 
-h2, p {
-    text-align: center;
+h2,
+p {
+  text-align: center;
 }
 
 a {
-    color: aqua;
+  text-align: center;
+  color: aqua;
 }
 
-h3, ul {
-    text-align: left;
+h3,
+ul {
+  text-align: left;
 }
 
 footer {
-    font-size: 12px;
-    text-align: center;
+  font-size: 12px;
+  text-align: center;
 }
 
 address {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.flex-item_header {
+  font-size: 14px;
+  flex-shrink: auto;
+  margin: auto;
+  justify-content: center;
+}
+
+.figcaption {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: content;
+    text-align: center;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    border-radius: 25px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+  }
 }
