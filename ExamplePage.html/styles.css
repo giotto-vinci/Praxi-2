@@ -88,7 +88,7 @@ address {
 .figcaption {
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-basis: content;
     text-align: center;
 }
